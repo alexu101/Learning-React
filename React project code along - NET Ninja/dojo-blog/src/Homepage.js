@@ -5,18 +5,14 @@ import useFetch from './useFetch';
 const Homepage = () => {
 
 
-    const { data, isPending, error } = useFetch('http://localhost:8000/blogs');
+    const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs');
 
-    const handleDelete = function (id) {
-        const newBlogs = blogs.filter(blog => id != blog.id);
-        setBlogs(newBlogs);
-    }
 
     return (
         <div className="home">
             {error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}
-            {blogs && <BlogList blogs={data} title={'All Blogs'} handleDelete={handleDelete} />}
+            {blogs && <BlogList blogs={blogs} title="All Blogs" />}
         </div>
     );
 }

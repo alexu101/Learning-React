@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 
-const useFetch = ({ url }) => {
+const useFetch = (url) => {
 
     const [data, setData] = useState(null);
     const [isPending, setIsPending] = useState(true);

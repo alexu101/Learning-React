@@ -70,3 +70,37 @@
   border-radius: 8px;
   cursor:pointer;
 }
+
+/*creating new blogs*/
+.create{
+max-width: 480px;
+margin:0 auto;
+text-align: center;
+}
+
+.create h2{
+  font-size: 30px;
+  color: #f1356d;
+  margin-bottom: 40px;
+}
+.create input,.create textarea, .create select{
+  width:100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border:2px solid rgb(238, 121, 121) ;
+  border-radius: 7px;
+  display: block;
+}
+
+.create button{
+  background-color: #f1356d;
+  color: #fff;
+  border:2px solid  #6b072f;
+  border-radius: 5px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.create label{
+  font-weight: bold;
+}
